@@ -20,6 +20,8 @@ public class WebController {
     private GoodsService service;
 
 
+
+
     //вывести все категории товаров
     @RequestMapping(value = "/goods", method = RequestMethod.GET)
     @ResponseBody
@@ -45,14 +47,12 @@ public class WebController {
         Goods list = service.getGoodsByOne(id);
         return list;
     }
-
     //добавить категорию товара
-    @RequestMapping(value = "/goodsAdd/{brand,nameCategory}", method = RequestMethod.GET)
-    @ResponseBody
-    public List<Goods> addGoodsServiceByOne(@PathVariable String brand, @PathVariable String nameCategory) {
+    @RequestMapping(value = "/goodsAdd/{brand},{nameCategory}",method = RequestMethod.GET)
+    public String addGoodsServiceByOne(@PathVariable String brand, @PathVariable String nameCategory) {
         service.addGoods(new Goods(brand,nameCategory));
-        List<Goods> list = service.getAll();
-        return list;
+        return "Done";
     }
+
 
 }

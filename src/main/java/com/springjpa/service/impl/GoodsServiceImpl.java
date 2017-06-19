@@ -31,6 +31,7 @@ public class GoodsServiceImpl implements GoodsService{
 
     @Override
     public Goods editGoods(Goods goods) {
+
         return goodsRepository.saveAndFlush(goods);
     }
 

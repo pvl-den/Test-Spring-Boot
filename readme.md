@@ -10,13 +10,15 @@ Framework: Spring boot 1.5.4
 
 — Основной фреймворк приложения Spring Boot
 — Использовать Spring Data для работы с БД
-— REST
-— Обработка ошибок.
+- REST
+— Обработка ошибок
 — Тесты
+
 
 Cистема классов описывающих магазин
 ------------
 ![Структура БД](https://github.com/pvl-den/Spring-Boot/blob/master/BD_1.jpg)
+
 
 //main class
 public class SpringPosgreApplication
@@ -29,7 +31,7 @@ public class Goods
 //Класс Холодильники
 public class Fridge 
 
-//Класс Телевизоры
+Класс Телевизоры
 public class TV 
 
 //Класс Стиральные машины
