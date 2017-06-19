@@ -16,6 +16,7 @@ Framework: Spring boot 1.5.4
 
 Cистема классов описывающих магазин
 ------------
+![Структура БД](https://github.com/pvl-den/Spring-Boot/raw/BD_1.jpg)
 
 //main class
 public class SpringPosgreApplication
